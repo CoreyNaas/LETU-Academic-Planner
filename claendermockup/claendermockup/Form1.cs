@@ -112,5 +112,35 @@ namespace claendermockup
                 listBox1.Items.RemoveAt(listBox1.IndexFromPoint(e.X, e.Y));
             }
         }
+
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void contextMenuStrip1_Opening(object sender, CancelEventArgs e)
+        {
+
+        }
+        //delete all classes in a semester
+        private void deleteToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+        }
+
+        private void deleteToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Clear();
+        }
+
+        private void deleteToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            listBox3.Items.Clear();
+        }
+
+        private void deleteToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            listBox4.Items.Clear();
+        }
     }
 }

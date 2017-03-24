@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.TreeNode treeNode29 = new System.Windows.Forms.TreeNode("EETC 1021 - DC Electricity Laboratory");
             System.Windows.Forms.TreeNode treeNode30 = new System.Windows.Forms.TreeNode("EETC 1022 - DC Electricity");
             System.Windows.Forms.TreeNode treeNode31 = new System.Windows.Forms.TreeNode("EETC 1041 - AC Electricity Laboratory");
@@ -57,6 +58,8 @@
             treeNode41});
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label25 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -103,7 +106,14 @@
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.listBox9 = new System.Windows.Forms.ListBox();
+            this.contextMenuStrip2 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip3 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip4 = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.deleteToolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
+            this.contextMenuStrip1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -114,6 +124,9 @@
             this.groupBox9.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox11.SuspendLayout();
+            this.contextMenuStrip2.SuspendLayout();
+            this.contextMenuStrip3.SuspendLayout();
+            this.contextMenuStrip4.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -133,14 +146,31 @@
             // listBox1
             // 
             this.listBox1.AllowDrop = true;
+            this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(0, 50);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(250, 121);
             this.listBox1.TabIndex = 10;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             this.listBox1.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox1_DragDrop);
             this.listBox1.DragEnter += new System.Windows.Forms.DragEventHandler(this.listBox1_DragEnter);
             this.listBox1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.listBox1_MouseDown);
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem});
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(108, 26);
+            this.contextMenuStrip1.Text = "is this real";
+            // 
+            // deleteToolStripMenuItem
+            // 
+            this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(107, 22);
+            this.deleteToolStripMenuItem.Text = "Delete";
+            this.deleteToolStripMenuItem.Click += new System.EventHandler(this.deleteToolStripMenuItem_Click);
             // 
             // label25
             // 
@@ -193,6 +223,7 @@
             // listBox2
             // 
             this.listBox2.AllowDrop = true;
+            this.listBox2.ContextMenuStrip = this.contextMenuStrip2;
             this.listBox2.FormattingEnabled = true;
             this.listBox2.Location = new System.Drawing.Point(3, 50);
             this.listBox2.Name = "listBox2";
@@ -234,6 +265,7 @@
             // listBox3
             // 
             this.listBox3.AllowDrop = true;
+            this.listBox3.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox3.FormattingEnabled = true;
             this.listBox3.Location = new System.Drawing.Point(3, 50);
             this.listBox3.Name = "listBox3";
@@ -275,6 +307,7 @@
             // listBox4
             // 
             this.listBox4.AllowDrop = true;
+            this.listBox4.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox4.FormattingEnabled = true;
             this.listBox4.Location = new System.Drawing.Point(6, 50);
             this.listBox4.Name = "listBox4";
@@ -316,6 +349,7 @@
             // listBox8
             // 
             this.listBox8.AllowDrop = true;
+            this.listBox8.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox8.FormattingEnabled = true;
             this.listBox8.Location = new System.Drawing.Point(3, 40);
             this.listBox8.Name = "listBox8";
@@ -357,6 +391,7 @@
             // listBox7
             // 
             this.listBox7.AllowDrop = true;
+            this.listBox7.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox7.FormattingEnabled = true;
             this.listBox7.Location = new System.Drawing.Point(3, 40);
             this.listBox7.Name = "listBox7";
@@ -398,6 +433,7 @@
             // listBox6
             // 
             this.listBox6.AllowDrop = true;
+            this.listBox6.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox6.FormattingEnabled = true;
             this.listBox6.Location = new System.Drawing.Point(3, 40);
             this.listBox6.Name = "listBox6";
@@ -439,6 +475,7 @@
             // listBox5
             // 
             this.listBox5.AllowDrop = true;
+            this.listBox5.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox5.FormattingEnabled = true;
             this.listBox5.Location = new System.Drawing.Point(6, 40);
             this.listBox5.Name = "listBox5";
@@ -634,6 +671,48 @@
             this.listBox9.DragDrop += new System.Windows.Forms.DragEventHandler(this.listBox9_DragDrop);
             this.listBox9.DragOver += new System.Windows.Forms.DragEventHandler(this.listBox9_DragOver);
             // 
+            // contextMenuStrip2
+            // 
+            this.contextMenuStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem1});
+            this.contextMenuStrip2.Name = "contextMenuStrip2";
+            this.contextMenuStrip2.Size = new System.Drawing.Size(108, 26);
+            // 
+            // deleteToolStripMenuItem1
+            // 
+            this.deleteToolStripMenuItem1.Name = "deleteToolStripMenuItem1";
+            this.deleteToolStripMenuItem1.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem1.Text = "Delete";
+            this.deleteToolStripMenuItem1.Click += new System.EventHandler(this.deleteToolStripMenuItem1_Click);
+            // 
+            // contextMenuStrip3
+            // 
+            this.contextMenuStrip3.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem2});
+            this.contextMenuStrip3.Name = "contextMenuStrip3";
+            this.contextMenuStrip3.Size = new System.Drawing.Size(108, 26);
+            // 
+            // deleteToolStripMenuItem2
+            // 
+            this.deleteToolStripMenuItem2.Name = "deleteToolStripMenuItem2";
+            this.deleteToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem2.Text = "Delete";
+            this.deleteToolStripMenuItem2.Click += new System.EventHandler(this.deleteToolStripMenuItem2_Click);
+            // 
+            // contextMenuStrip4
+            // 
+            this.contextMenuStrip4.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.deleteToolStripMenuItem3});
+            this.contextMenuStrip4.Name = "contextMenuStrip4";
+            this.contextMenuStrip4.Size = new System.Drawing.Size(153, 48);
+            // 
+            // deleteToolStripMenuItem3
+            // 
+            this.deleteToolStripMenuItem3.Name = "deleteToolStripMenuItem3";
+            this.deleteToolStripMenuItem3.Size = new System.Drawing.Size(152, 22);
+            this.deleteToolStripMenuItem3.Text = "Delete";
+            this.deleteToolStripMenuItem3.Click += new System.EventHandler(this.deleteToolStripMenuItem3_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -661,6 +740,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.contextMenuStrip1.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
@@ -680,6 +760,9 @@
             this.groupBox10.ResumeLayout(false);
             this.groupBox10.PerformLayout();
             this.groupBox11.ResumeLayout(false);
+            this.contextMenuStrip2.ResumeLayout(false);
+            this.contextMenuStrip3.ResumeLayout(false);
+            this.contextMenuStrip4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -734,6 +817,14 @@
         private System.Windows.Forms.ListBox listBox5;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.ListBox listBox9;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem1;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip3;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem2;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip4;
+        private System.Windows.Forms.ToolStripMenuItem deleteToolStripMenuItem3;
     }
 }
 
